@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/saikumar/static/css/main.161a37c0.chunk.css",
+    "main.js": "/saikumar/static/js/main.eb067f9e.chunk.js",
+    "main.js.map": "/saikumar/static/js/main.eb067f9e.chunk.js.map",
+    "runtime~main.js": "/saikumar/static/js/runtime~main.c7194287.js",
+    "runtime~main.js.map": "/saikumar/static/js/runtime~main.c7194287.js.map",
+    "static/css/2.0733074b.chunk.css": "/saikumar/static/css/2.0733074b.chunk.css",
+    "static/js/2.8c0b4894.chunk.js": "/saikumar/static/js/2.8c0b4894.chunk.js",
+    "static/js/2.8c0b4894.chunk.js.map": "/saikumar/static/js/2.8c0b4894.chunk.js.map",
+    "index.html": "/saikumar/index.html",
+    "precache-manifest.9300086095e8388819f16543d7c5c307.js": "/saikumar/precache-manifest.9300086095e8388819f16543d7c5c307.js",
+    "service-worker.js": "/saikumar/service-worker.js",
+    "static/css/2.0733074b.chunk.css.map": "/saikumar/static/css/2.0733074b.chunk.css.map",
+    "static/css/main.161a37c0.chunk.css.map": "/saikumar/static/css/main.161a37c0.chunk.css.map"
+  }
+}
