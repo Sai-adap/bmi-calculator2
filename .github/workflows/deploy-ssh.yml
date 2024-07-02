@@ -32,7 +32,7 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           script: |
             cd /var/www/html
-            git clone https://sai-adap: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@github.com/Sai-adap/bmi-calculator2
+            git clone https://sai-adap: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@github.com/Sai-adap/bmi-calculator2
             cd bmi-calculator2
             git pull
             npm install
