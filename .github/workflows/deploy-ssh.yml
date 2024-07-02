@@ -1,47 +1,39 @@
 name: deploy to server
 
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
+on: 
+ push:
+   branches: ["main"]
+jobs: 
+  build: 
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: checkout repo
         uses: actions/checkout@v2
-
-      - name: Setup Node.js
+      - name: setup nodejs
         uses: actions/setup-node@v2
-        with:
-          node-version: "14"
-
-      - name: Install dependencies
+        with: 
+          node-version: "14" 
+      - name: install dependancy
         run: npm install
-
-      - name: Build project
+      - name: build project
         run: npm run build
 
-  deploy:
+  deploy: 
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: checkout repo
         uses: actions/checkout@v2
-
-      - name: Copy files via SSH
+      - name: copy files via ssh
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
+          host: ${{secrets.SSH_HOST}}
+          username: ${{secrets.SSH_USER}}
+          key: ${{secrets.SSH_KEY}}
           script: |
-            cd /var/www/html/
+            cd /var/www/html
             git clone https://sai-adap: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@github.com/Sai-adap/bmi-calculator2
             cd bmi-calculator2
             git pull
             npm install
             npm run build
-
-        
